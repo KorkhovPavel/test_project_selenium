@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    CARD = (By.CSS_SELECTOR, ".btn-group")
 
 
 # class MainPageLocators:
@@ -21,3 +22,8 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main p")
     SMS = (By.CSS_SELECTOR, '.alertinner strong')
     CARD_PRICE = (By.CSS_SELECTOR, ".alert-info strong")
+
+
+class BacketPageLocators:
+    MESSAGE = (By.CSS_SELECTOR, "#content_inner p")
+    BASKET_IS_NOT_EMPTY = (By.CSS_SELECTOR, "#basket_formset")
